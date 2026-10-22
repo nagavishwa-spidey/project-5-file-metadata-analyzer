@@ -361,7 +361,7 @@ tests/test_text_analyzer.py::test_analyze_empty_file PASSED
 
 ## 16. Verified Live Website URL
 
-- **GitHub Repository:** https://github.com/nagavishwa-spidey/cloud-file-metadata-analyzer
+- **GitHub Repository:** https://github.com/nagavishwa-spidey/project-5-file-metadata-analyzer
 - **Live Deployment URL:** _To be updated after cloud provider deployment verification_
 
 ---
