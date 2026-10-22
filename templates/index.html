@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud File Metadata Analyzer</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🔍</span>
+                <h1>Cloud File Metadata Analyzer</h1>
+            </div>
+            <p class="tagline">Microservice for Object Inspection, Hash Integrity & Security Profiling</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Upload Card -->
+        <section class="card upload-card">
+            <div class="drop-zone" id="drop-zone">
+                <div class="drop-icon">📦</div>
+                <h2>Drag & Drop Files for Inspection</h2>
+                <p class="drop-prompt">Supports single & batch analysis up to 10 MB per file</p>
+                <button type="button" class="btn btn-primary" id="browse-btn">Browse Files</button>
+                <input type="file" id="file-input" multiple class="hidden-input">
+            </div>
+        </section>
+
+        <!-- Action / Status Toolbar -->
+        <div id="status-bar" class="status-bar hidden"></div>
+
+        <!-- Results Grid -->
+        <section id="results-container" class="results-container hidden">
+            <div class="results-header">
+                <h2>Analysis Results</h2>
+                <div class="results-actions">
+                    <button id="export-json-btn" class="btn-sm btn-accent">Export All as JSON</button>
+                    <button id="clear-btn" class="btn-sm btn-secondary">Clear Results</button>
+                </div>
+            </div>
+            <div id="cards-grid" class="cards-grid"></div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>Cloud File Metadata Analyzer &bull; Cloud Storage Microservices &bull; Integrity & Heuristic Scanning</p>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
